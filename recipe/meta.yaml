@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: umami
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/TerrainBento/umami/archive/v{{ version }}.tar.gz
-  sha256: 586457b69fcd6e8c9cb4c20c53846421933ae814e3f28015803acee7874ff1d8
+  sha256: f40e8f86654ffd15df87c3762b1c82f2f030c4a7f1de0e707ff50d4e67a97b0c
 
 build:
   number: 0
