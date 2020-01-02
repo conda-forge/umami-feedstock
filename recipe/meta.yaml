@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
     - scipy
     - numpy
-    - landlab >=1.10
+    - landlab >=1.10,<2
 
 test:
   requires:
