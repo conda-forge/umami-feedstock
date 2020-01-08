@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: umami
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/TerrainBento/umami/archive/v{{ version }}.tar.gz
-  sha256: f40e8f86654ffd15df87c3762b1c82f2f030c4a7f1de0e707ff50d4e67a97b0c
+  sha256: 9ceb63175e0505accbbc37a22c280c47a20a1bb9f5b76f0f6e37e0be66792569
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
     - scipy
     - numpy
-    - landlab >=1.10
+    - landlab >=1.10,<2b
 
 test:
   requires:
