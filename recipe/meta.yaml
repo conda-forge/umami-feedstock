@@ -1,4 +1,4 @@
-{% set version = "2.0.0b2 " %}
+{% set version = "2.0.0b2" %}
 
 package:
   name: umami
