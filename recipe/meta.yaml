@@ -10,18 +10,18 @@ source:
   #  `openssl sha256 <file name>`.
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
 
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - scipy
     - numpy
     - landlab >=2.0.1
@@ -32,6 +32,7 @@ test:
     - pytest-cov
     - pytest-runner
     - pytest-datadir
+    - python {{ python_min }}
 
   imports:
     - umami
